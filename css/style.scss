@@ -1,7 +1,6 @@
 @use "./variaveis";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 
 * {
@@ -9,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Crimson Text',serif;
+    font-family: 'Crimson Text', serif;
     list-style: none;
 }
 
@@ -25,6 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
+    color:variaveis.$color-principal;
     grid-template-rows: 2fr 1fr 3fr 2fr;
 }
 
@@ -205,5 +205,41 @@ header{
 
 
         }
+    }
+}
+
+nav{
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+    background: variaveis.$bg-principal;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap:5rem;
+
+    img{
+        width: 20%;
+    }
+
+    ul{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap:3rem;
+        font-weight: 900;
+        font-size: 1.7rem;
+
+        
+
+        i{
+            color:variaveis.$color-terciaria;
+            font-size: 1rem;
+            padding-left: 2rem;
+        }
+    }
+
+    .img-rotate{
+        transform: rotate(180deg);
     }
 }
