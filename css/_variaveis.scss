@@ -1,0 +1,17 @@
+
+@mixin mobile {
+    @media (max-width: 550px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+$color-principal:#4A2B10;
+$color-segundaria:#fff;
+$bg-principal:#FCF5E7;
+$bg-header:#4A2B10;

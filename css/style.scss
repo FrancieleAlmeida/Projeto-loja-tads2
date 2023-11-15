@@ -1,11 +1,15 @@
+@use "./variaveis";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Crimson Text',serif;
     list-style: none;
 }
 
@@ -21,10 +25,185 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
+    grid-template-rows: 2fr 1fr 3fr 2fr;
 }
 
 header{
     width: 100%;
-    height: 30rem;
-    background: red;
+    height: 100%;
+    background: variaveis.$bg-principal;
+
+
+
+    .row{
+        display: flex;
+        justify-content: flex-end;
+        background: variaveis.$bg-header;
+        padding: 1rem 15rem 1rem 1rem;
+
+        @include variaveis.mobile{
+            display: none;
+        }
+        
+        a{
+            color:variaveis.$color-segundaria;
+
+
+
+        }
+    }
+    .baixo{
+        display:flex;
+        padding: 1rem;
+        
+        .left{
+            width: 55%;
+            height: 100%;
+            display: flex;
+
+            @include variaveis.mobile{
+                width: 70%;
+            }
+            @include variaveis.tablet{
+                width: 70%;
+            }
+
+            .logo-wb{
+                padding-left: 8rem;
+                padding-top: 2rem;
+
+                @include variaveis.mobile{
+                    display:none;
+                }
+                @include variaveis.tablet{
+                    display: none;
+                }
+
+                
+            }
+            
+            .menu{
+                width: 50%;
+                display: none;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 2rem;
+                cursor: pointer;
+
+                @include variaveis.mobile{
+                    display: flex;
+                    padding-top: 3rem;
+                    padding-left: 1rem;
+                }
+                @include variaveis.tablet{
+                    display: flex;
+                    padding-top: 3rem;
+                }
+
+
+            }
+            .center{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; 
+            width: 100%;
+            
+                @include variaveis.mobile{
+                    width: 50%;
+                }
+                @include variaveis.tablet{
+                    width: 50%;
+                }
+
+                img{
+                    cursor: pointer;
+                }
+            }
+            
+
+        }
+
+        .rigth{
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 5rem;
+            padding-top: 3rem;
+            gap:2rem;
+            
+            
+
+            @include variaveis.mobile{
+                width: 30%;
+                padding-right: 2rem;
+                padding-top: 3rem;
+            }
+
+            @include variaveis.tablet{
+                gap:2rem;
+                font-size: 2rem;
+            }
+
+            .carrinho{
+                cursor: pointer;
+            }
+
+            i{
+                font-size: 2.3rem;
+                color: variaveis.$color-principal;
+                cursor: pointer;
+            }
+
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include variaveis.mobile{
+                    display: none;
+                }
+
+                input{
+                    display: none;
+                    outline: none;
+
+                    @include variaveis.tablet{
+                        display: none;
+                    }
+                }
+                span{
+                    color: variaveis.$color-principal;
+                    padding-left: .3rem;
+                    cursor: pointer;
+
+                    @include variaveis.tablet{
+                        display: none;
+                    }
+                }
+            }
+
+            
+            .desejos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include variaveis.mobile{
+                    display: none;
+                }
+
+                a{
+                    color: variaveis.$color-principal;
+                    padding-left: .3rem;
+
+                    @include variaveis.tablet{
+                        display:none;
+                    }
+                }
+            }
+
+
+
+        }
+    }
 }
