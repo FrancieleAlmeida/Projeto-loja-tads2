@@ -17,17 +17,37 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 98.9vw;
   height: 100vh;
   display: grid;
   color: #4A2B10;
-  grid-template-rows: 2fr 1fr 3fr 2fr;
+  background: #FCF5E7;
+  grid-template-rows: 2fr 100px 622px 500px 1fr;
+}
+@media (max-width: 550px) {
+  .container {
+    width: 95vw;
+  }
 }
 
 header {
   width: 100%;
   height: 100%;
   background: #FCF5E7;
+}
+@media (max-width: 550px) {
+  header {
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px -5px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px -5px 15px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 header .row {
   display: flex;
@@ -201,16 +221,26 @@ nav {
   height: 100%;
   background: #FCF5E7;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   gap: 5rem;
+}
+@media (max-width: 550px) {
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
 }
 nav img {
   width: 20%;
 }
 nav ul {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   gap: 3rem;
   font-weight: 900;
@@ -223,4 +253,178 @@ nav ul i {
 }
 nav .img-rotate {
   transform: rotate(180deg);
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 550px) {
+  aside {
+    height: 40rem;
+  }
+}
+@media (max-width: 1024px) {
+  aside {
+    height: 40rem;
+  }
+}
+aside .banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 550px) {
+  aside .banner {
+    overflow: hidden;
+  }
+}
+aside .banner .bordas {
+  position: absolute;
+  width: 90%;
+  height: 3.2rem;
+  border: 0.1rem solid #fff;
+  border-bottom: 0;
+  top: 2rem;
+  left: 8rem;
+}
+@media (max-width: 1024px) {
+  aside .banner .bordas {
+    width: 74%;
+    left: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  aside .banner .bordas {
+    top: 2rem;
+    width: 60%;
+    left: 7rem;
+  }
+}
+aside .banner .bordas::before {
+  content: "";
+  right: -5rem;
+  top: 3rem;
+  height: 50rem;
+  width: 5rem;
+  position: absolute;
+  border: 0.1rem solid #fff;
+  border-left: 0;
+}
+@media (max-width: 1024px) {
+  aside .banner .bordas::before {
+    height: 27.9rem;
+  }
+}
+aside .banner .bordas::after {
+  content: "";
+  left: -5rem;
+  top: 3rem;
+  height: 50rem;
+  width: 5rem;
+  position: absolute;
+  border: 0.1rem solid #fff;
+  border-right: 0;
+}
+@media (max-width: 1024px) {
+  aside .banner .bordas::after {
+    height: 27.9rem;
+  }
+}
+aside .banner .bordas .icon {
+  position: absolute;
+  left: -4rem;
+  top: -0.6rem;
+}
+aside .banner .bordas .icon2 {
+  position: absolute;
+  right: -4rem;
+  top: -0.6rem;
+  transform: rotate(90deg);
+}
+aside .banner .bordas2 {
+  position: absolute;
+  width: 90%;
+  height: 3.2rem;
+  border: 0.1rem solid #fff;
+  border-top: 0;
+  bottom: 3.5rem;
+  left: 8rem;
+}
+@media (max-width: 1024px) {
+  aside .banner .bordas2 {
+    width: 74%;
+    left: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  aside .banner .bordas2 {
+    width: 60%;
+    left: 7rem;
+    bottom: 1rem;
+  }
+}
+aside .banner .bordas2 .icon3 {
+  position: absolute;
+  left: -4rem;
+  bottom: -0.6rem;
+  transform: rotate(280deg);
+}
+@media (max-width: 550px) {
+  aside .banner .bordas2 .icon3 {
+    bottom: 1rem;
+  }
+}
+aside .banner .bordas2 .icon4 {
+  position: absolute;
+  right: -4rem;
+  bottom: -0.6rem;
+  transform: rotate(180deg);
+}
+@media (max-width: 550px) {
+  aside .banner .bordas2 .icon4 {
+    bottom: 1rem;
+  }
+}
+aside .banner .banner1 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, #000 100%);
+  animation: animacaoBanner1 5s linear infinite;
+  transform-origin: top left;
+}
+@media (max-width: 550px) {
+  aside .banner .banner1 {
+    height: auto;
+    width: 200%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 1024px) {
+  aside .banner .banner1 {
+    height: 40rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid blue;
+  background: blue;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background: forestgreen;
+}
+
+@keyframes animacaoBanner1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }/*# sourceMappingURL=style.css.map */
