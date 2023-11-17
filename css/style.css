@@ -22,7 +22,7 @@ body {
   display: grid;
   color: #4A2B10;
   background: #FCF5E7;
-  grid-template-rows: 2fr 100px 622px 500px 1fr;
+  grid-template-rows: 2fr 100px 622px 900px 1fr;
 }
 @media (max-width: 550px) {
   .container {
@@ -410,8 +410,176 @@ aside .banner .banner1 {
 main {
   width: 100%;
   height: 100%;
-  border: 0.2rem solid blue;
-  background: blue;
+  background: gray;
+}
+main .principais {
+  background: #FCF5E7;
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 11rem;
+  padding-top: 5rem;
+  gap: 3rem;
+}
+@media (max-width: 550px) {
+  main .principais {
+    height: 90rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
+  width: 30rem;
+  height: 30rem;
+  background: #000;
+  position: relative;
+  cursor: pointer;
+}
+main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
+  position: absolute;
+  width: 80%;
+  height: 2rem;
+  border: 0.1rem solid #fff;
+  border-bottom: 0;
+  top: 1rem;
+  left: 3rem;
+}
+@media (max-width: 1024px) {
+  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
+    width: 74%;
+    left: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
+    top: 2rem;
+    width: 60%;
+    left: 7rem;
+  }
+}
+main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
+  content: "";
+  right: -2.1rem;
+  top: 1.9rem;
+  height: 23rem;
+  width: 2rem;
+  position: absolute;
+  border: 0.1rem solid #fff;
+  border-left: 0;
+}
+@media (max-width: 1024px) {
+  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
+    height: 27.9rem;
+  }
+}
+main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
+  content: "";
+  left: -2.1rem;
+  top: 1.9rem;
+  height: 23rem;
+  width: 2rem;
+  position: absolute;
+  border: 0.1rem solid #fff;
+  border-right: 0;
+}
+@media (max-width: 1024px) {
+  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
+    height: 27.9rem;
+  }
+}
+main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.1rem solid #fcf5e7;
+  top: 1.2rem;
+  left: -0.9rem;
+}
+main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
+  content: "";
+  position: absolute;
+  border: 0.1rem solid #fcf5e7;
+  width: 1.4rem;
+  height: 1.4rem;
+  left: 24rem;
+  top: -0.1rem;
+}
+main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
+  top: 24.4rem;
+  left: -0.9rem;
+}
+main .principais .box img, main .principais .box2 img, main .principais .box3 img, main .principais .box4 img {
+  width: 100%;
+  height: 100%;
+}
+main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
+  position: absolute;
+  width: 80%;
+  height: 2rem;
+  border: 0.1rem solid #fff;
+  border-top: 0;
+  bottom: 2rem;
+  left: 3rem;
+}
+@media (max-width: 1024px) {
+  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
+    width: 74%;
+    left: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
+    width: 60%;
+    left: 7rem;
+    bottom: 1rem;
+  }
+}
+main .principais .box::after {
+  content: "Wand Shop";
+  position: absolute;
+  color: #fcf5e7;
+  text-shadow: 0 0 5px #000;
+  bottom: 13.5rem;
+  left: 11rem;
+  line-height: 24px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+main .principais .box2::after {
+  content: "Trunk Station";
+  position: absolute;
+  color: #fcf5e7;
+  text-shadow: 0 0 5px #000;
+  bottom: 13.5rem;
+  left: 9rem;
+  line-height: 24px;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+}
+main .principais .box3::after {
+  content: "Clothing Collection";
+  position: absolute;
+  color: #fcf5e7;
+  text-shadow: 0 0 5px #000;
+  bottom: 13.5rem;
+  left: 7rem;
+  line-height: 24px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+main .principais .box4::after {
+  content: "Sweet Trolley";
+  position: absolute;
+  color: #fcf5e7;
+  text-shadow: 0 0 5px #000;
+  bottom: 13.5rem;
+  left: 10rem;
+  line-height: 24px;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 footer {
