@@ -22,7 +22,7 @@ body {
   display: grid;
   color: #4A2B10;
   background: #FCF5E7;
-  grid-template-rows: 2fr 100px 622px 900px 1fr;
+  grid-template-rows: 2fr 100px 622px 5fr 200px;
 }
 @media (max-width: 550px) {
   .container {
@@ -412,6 +412,11 @@ main {
   height: 100%;
   background: gray;
 }
+@media (max-width: 550px) {
+  main {
+    height: 100vh;
+  }
+}
 main .principais {
   background: #FCF5E7;
   width: 100%;
@@ -424,18 +429,37 @@ main .principais {
 }
 @media (max-width: 550px) {
   main .principais {
-    height: 90rem;
+    width: 100%;
+    height: 30rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 1rem 0 0;
+    gap: 1rem;
   }
 }
 main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
-  width: 30rem;
-  height: 30rem;
+  width: 21.3%;
+  height: 75%;
   background: #000;
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 550px) {
+  main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    flex-wrap: wrap;
+    top: 30rem;
+    position: relative;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
+    height: 15rem;
+    width: 12rem;
+  }
 }
 main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
   position: absolute;
@@ -454,9 +478,15 @@ main .principais .box .bordas3, main .principais .box2 .bordas3, main .principai
 }
 @media (max-width: 550px) {
   main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
-    top: 2rem;
-    width: 60%;
-    left: 7rem;
+    left: 2rem;
+    width: 78%;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
+    left: 1.5rem;
+    width: 79%;
+    height: 1rem;
   }
 }
 main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
@@ -474,6 +504,21 @@ main .principais .box .bordas3::before, main .principais .box2 .bordas3::before,
     height: 27.9rem;
   }
 }
+@media (max-width: 550px) {
+  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
+    height: 11.1rem;
+    width: 7%;
+    right: -1rem;
+    top: 1.9rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
+    right: -0.5rem;
+    top: 0.9rem;
+    width: 5.1%;
+  }
+}
 main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
   content: "";
   left: -2.1rem;
@@ -489,6 +534,21 @@ main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, m
     height: 27.9rem;
   }
 }
+@media (max-width: 550px) {
+  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
+    height: 11.1rem;
+    width: 7%;
+    left: -1rem;
+    top: 1.9rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
+    top: 0.9rem;
+    width: 8%;
+    left: -1rem;
+  }
+}
 main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
   position: absolute;
   width: 1.5rem;
@@ -496,6 +556,19 @@ main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mi
   border: 0.1rem solid #fcf5e7;
   top: 1.2rem;
   left: -0.9rem;
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
+    top: 1.1rem;
+    left: -0.7rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 0.2rem;
+  }
 }
 main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
   content: "";
@@ -506,9 +579,42 @@ main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bord
   left: 24rem;
   top: -0.1rem;
 }
+@media (max-width: 550px) {
+  main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
+    left: 13rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
+    left: 9.3rem;
+    top: 0rem;
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
 main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
   top: 24.4rem;
   left: -0.9rem;
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
+    left: 12.3rem;
+    top: 12.5rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
+    border: 0;
+    top: 11.5rem;
+    left: -0.7rem;
+  }
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box2 .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box3 .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box4 .bordas3 .mini-bordas:nth-child(2)::after {
+    border: 0.1rem solid #fcf5e7;
+    left: -13rem;
+    top: -0.1rem;
+  }
 }
 main .principais .box img, main .principais .box2 img, main .principais .box3 img, main .principais .box4 img {
   width: 100%;
@@ -531,9 +637,17 @@ main .principais .box .bordas4, main .principais .box2 .bordas4, main .principai
 }
 @media (max-width: 550px) {
   main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
-    width: 60%;
-    left: 7rem;
+    width: 78%;
+    height: 1.8rem;
+    left: 2rem;
     bottom: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
+    left: 1.4rem;
+    width: 79%;
+    height: 0.8rem;
   }
 }
 main .principais .box::after {
@@ -547,6 +661,18 @@ main .principais .box::after {
   font-weight: 900;
   font-size: 2rem;
 }
+@media (max-width: 550px) {
+  main .principais .box::after {
+    left: 3rem;
+    bottom: 7rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box::after {
+    bottom: 6rem;
+    left: 1rem;
+  }
+}
 main .principais .box2::after {
   content: "Trunk Station";
   position: absolute;
@@ -559,6 +685,18 @@ main .principais .box2::after {
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 550px) {
+  main .principais .box2::after {
+    left: 3rem;
+    bottom: 7rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box2::after {
+    bottom: 5rem;
+    left: 1rem;
+  }
+}
 main .principais .box3::after {
   content: "Clothing Collection";
   position: absolute;
@@ -570,6 +708,18 @@ main .principais .box3::after {
   font-weight: 900;
   font-size: 2rem;
 }
+@media (max-width: 550px) {
+  main .principais .box3::after {
+    left: 5rem;
+    bottom: 7rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box3::after {
+    bottom: 5rem;
+    left: 2rem;
+  }
+}
 main .principais .box4::after {
   content: "Sweet Trolley";
   position: absolute;
@@ -580,6 +730,18 @@ main .principais .box4::after {
   line-height: 24px;
   font-weight: 900;
   font-size: 2rem;
+}
+@media (max-width: 550px) {
+  main .principais .box4::after {
+    left: 3rem;
+    bottom: 7rem;
+  }
+}
+@media (max-width: 370px) {
+  main .principais .box4::after {
+    bottom: 5rem;
+    left: 3rem;
+  }
 }
 
 footer {

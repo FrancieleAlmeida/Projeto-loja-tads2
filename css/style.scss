@@ -25,7 +25,7 @@ body {
     display: grid;
     color:variaveis.$color-principal;
     background: variaveis.$bg-principal;
-    grid-template-rows: 2fr 100px 622px 900px 1fr;
+    grid-template-rows: 2fr 100px 622px 5fr 200px;
 
     @include variaveis.mobile{
         width: 95vw;
@@ -438,6 +438,12 @@ main{
     height: 100%;
     background: gray;
 
+    @include variaveis.mobile{
+        height: 100vh;
+    }
+
+
+
 
 
     .principais{
@@ -451,19 +457,37 @@ main{
         gap:3rem;
 
             @include variaveis.mobile{
-                height: 90rem;
+                width: 100%;
+                height: 30rem;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 flex-wrap: wrap;
+                padding: 1rem 0 0;
+                gap:1rem;
+                
             }
 
 
         .box, .box2, .box3, .box4{
-            width: 30rem;
-            height: 30rem;
+            width: 21.3%;
+            height: 75%;
             background: #000;
             position: relative;
             cursor: pointer;
+
+            @include variaveis.mobile{
+                width: 17rem;
+                height: 17rem;
+                display: flex;
+                flex-wrap: wrap;
+                top:30rem;
+                position: relative;
+            }
+
+            @include variaveis.mobile-mini{
+                height: 15rem;
+                width: 12rem;
+            }
 
             .bordas3{
                 position: absolute;
@@ -477,14 +501,17 @@ main{
                 @include variaveis.tablet{
                     width: 74%;
                     left: 10rem;
-        
                 }
 
                 @include variaveis.mobile{
-                    top:2rem;
-                    width: 60%;
-                    left: 7rem;
-        
+                    left: 2rem;
+                    width: 78%;
+                }
+
+                @include variaveis.mobile-mini{
+                    left: 1.5rem;
+                    width: 79%;
+                    height: 1rem;
                 }
 
 
@@ -500,6 +527,19 @@ main{
 
                     @include variaveis.tablet{
                         height: 27.9rem;
+                    }
+
+                    @include variaveis.mobile{
+                        height: 11.1rem;
+                        width: 7%;
+                        right: -1rem;
+                        top:1.9rem;
+                    }
+
+                    @include variaveis.mobile-mini{
+                        right: -0.5rem;
+                        top:0.9rem;
+                        width: 5.1%;
                     }
 
                     
@@ -518,6 +558,20 @@ main{
                     @include variaveis.tablet{
                         height: 27.9rem;
                     }
+
+                    @include variaveis.mobile{
+                        height: 11.1rem;
+                        width: 7%;
+                        left: -1rem;
+                        top:1.9rem;
+                    }
+
+                    @include variaveis.mobile-mini{
+                        top:0.9rem;
+                        width: 8%;
+                        left: -1rem;
+                        
+                    }
                 }
 
                 .mini-bordas{
@@ -528,6 +582,17 @@ main{
                     top:1.2rem;
                     left: -.9rem;
 
+                    @include variaveis.mobile{
+                        top:1.1rem;
+                        left: -.7rem;
+                    }
+
+                    @include variaveis.mobile-mini{
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        top:0.2rem;
+                    }
+
                     &::after{
                         content: '';
                         position: absolute;
@@ -537,6 +602,16 @@ main{
                         left: 24rem;
                         top:-.1rem;
 
+                        @include variaveis.mobile{
+                            left: 13rem;
+                        }
+
+                        @include variaveis.mobile-mini{
+                            left: 9.3rem;
+                            top:0rem;
+                            width: 1.1rem;
+                            height: 1.1rem;
+                        }
                     }
                 }
 
@@ -544,6 +619,26 @@ main{
                     top: 24.4rem;
                     left: -.9rem;
 
+                    @include variaveis.mobile{
+                        left: 12.3rem;
+                        top:12.5rem;
+                    }
+
+                    @include variaveis.mobile-mini{
+                        border: 0;
+                        top:11.5rem;
+                        left: -0.7rem;
+                        
+                    }
+
+                    &::after{
+
+                        @include variaveis.mobile{
+                            border: .1rem solid #fcf5e7;
+                            left: -13rem;
+                            top: -0.1rem;
+                        }
+                    }
                 }
             }
 
@@ -568,10 +663,16 @@ main{
                 }
     
                 @include variaveis.mobile{
-                    width: 60%;
-                    left: 7rem;
+                    width: 78%;
+                    height: 1.8rem;
+                    left: 2rem;
                     bottom: 1rem;
-        
+                }
+
+                @include variaveis.mobile{
+                    left: 1.4rem;
+                    width: 79%;
+                    height: 0.8rem;
                 }
             }
         }
@@ -588,6 +689,16 @@ main{
                 line-height: 24px;
                 font-weight: 900;
                 font-size: 2rem;
+
+                @include variaveis.mobile{
+                    left: 3rem;
+                    bottom: 7rem;
+                }
+                
+                @include variaveis.mobile-mini{
+                    bottom: 6rem;
+                    left: 1rem;
+                }
             }
         }
 
@@ -604,6 +715,16 @@ main{
                 font-weight: 900;
                 font-size: 2rem;
                 text-align: center;
+
+                @include variaveis.mobile{
+                    left: 3rem;
+                    bottom: 7rem;
+                }
+
+                @include variaveis.mobile-mini{
+                    bottom: 5rem;
+                    left: 1rem;
+                }
             }
         }
 
@@ -618,6 +739,16 @@ main{
                 line-height: 24px;
                 font-weight: 900;
                 font-size: 2rem;
+
+                @include variaveis.mobile{
+                    left: 5rem;
+                    bottom: 7rem;
+                }
+                
+                @include variaveis.mobile-mini{
+                    bottom: 5rem;
+                    left: 2rem;
+                }
             }
         }
 
@@ -632,6 +763,16 @@ main{
                 line-height: 24px;
                 font-weight: 900;
                 font-size: 2rem;
+
+                @include variaveis.mobile{
+                    left: 3rem;
+                    bottom: 7rem;
+                }
+                
+                @include variaveis.mobile-mini{
+                    bottom: 5rem;
+                    left: 3rem;
+                }
             }
         }
     }
