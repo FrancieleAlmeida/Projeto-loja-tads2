@@ -410,338 +410,96 @@ aside .banner .banner1 {
 main {
   width: 100%;
   height: 100%;
-  background: gray;
+  background: #FCF5E7;
 }
 @media (max-width: 550px) {
   main {
     height: 100vh;
   }
 }
-main .principais {
-  background: #FCF5E7;
+main .new-in {
   width: 100%;
-  height: 45rem;
+  height: 60rem;
+  margin-top: 1rem;
+}
+main .new-in .titulo {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 11rem;
-  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
-@media (max-width: 550px) {
-  main .principais {
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0 0;
-    gap: 1rem;
-  }
+main .new-in .titulo h2 {
+  font-size: 3rem;
 }
-main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
-  width: 21.3%;
-  height: 75%;
-  background: #000;
-  position: relative;
+main .new-in .titulo img {
+  width: 60rem;
+  height: 0.3rem;
+}
+main .new-in .carrossel {
+  border: 0.2rem solid black;
+  height: 90%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+main .new-in .carrossel .card {
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+main .new-in .carrossel .card button {
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
+  width: 17rem;
+  height: 3rem;
+  text-align: center;
+  background: #A98754;
+  color: #fff;
+  font-weight: 700;
 }
-@media (max-width: 550px) {
-  main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
-    width: 17rem;
-    height: 17rem;
-    display: flex;
-    flex-wrap: wrap;
-    top: 30rem;
-    position: relative;
-  }
+main .new-in .carrossel .card button:hover {
+  background: #4a2b10;
 }
-@media (max-width: 370px) {
-  main .principais .box, main .principais .box2, main .principais .box3, main .principais .box4 {
-    height: 15rem;
-    width: 12rem;
-  }
+main .new-in .carrossel .card .box {
+  position: relative;
+  border: 0.1rem solid #a85;
+  padding: 1.5rem;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
 }
-main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
-  position: absolute;
-  width: 80%;
-  height: 2rem;
-  border: 0.1rem solid #fff;
-  border-bottom: 0;
-  top: 1rem;
-  left: 3rem;
-}
-@media (max-width: 1024px) {
-  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
-    width: 74%;
-    left: 10rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
-    left: 2rem;
-    width: 78%;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3, main .principais .box2 .bordas3, main .principais .box3 .bordas3, main .principais .box4 .bordas3 {
-    left: 1.5rem;
-    width: 79%;
-    height: 1rem;
-  }
-}
-main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
-  content: "";
-  right: -2.1rem;
-  top: 1.9rem;
-  height: 23rem;
-  width: 2rem;
-  position: absolute;
-  border: 0.1rem solid #fff;
-  border-left: 0;
-}
-@media (max-width: 1024px) {
-  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
-    height: 27.9rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
-    height: 11.1rem;
-    width: 7%;
-    right: -1rem;
-    top: 1.9rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3::before, main .principais .box2 .bordas3::before, main .principais .box3 .bordas3::before, main .principais .box4 .bordas3::before {
-    right: -0.5rem;
-    top: 0.9rem;
-    width: 5.1%;
-  }
-}
-main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
-  content: "";
-  left: -2.1rem;
-  top: 1.9rem;
-  height: 23rem;
-  width: 2rem;
-  position: absolute;
-  border: 0.1rem solid #fff;
-  border-right: 0;
-}
-@media (max-width: 1024px) {
-  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
-    height: 27.9rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
-    height: 11.1rem;
-    width: 7%;
-    left: -1rem;
-    top: 1.9rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3::after, main .principais .box2 .bordas3::after, main .principais .box3 .bordas3::after, main .principais .box4 .bordas3::after {
-    top: 0.9rem;
-    width: 8%;
-    left: -1rem;
-  }
-}
-main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.1rem solid #fcf5e7;
-  top: 1.2rem;
-  left: -0.9rem;
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
-    top: 1.1rem;
-    left: -0.7rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3 .mini-bordas, main .principais .box2 .bordas3 .mini-bordas, main .principais .box3 .bordas3 .mini-bordas, main .principais .box4 .bordas3 .mini-bordas {
-    width: 1.3rem;
-    height: 1.3rem;
-    top: 0.2rem;
-  }
-}
-main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
-  content: "";
-  position: absolute;
-  border: 0.1rem solid #fcf5e7;
-  width: 1.4rem;
-  height: 1.4rem;
-  left: 24rem;
-  top: -0.1rem;
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
-    left: 13rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3 .mini-bordas::after, main .principais .box2 .bordas3 .mini-bordas::after, main .principais .box3 .bordas3 .mini-bordas::after, main .principais .box4 .bordas3 .mini-bordas::after {
-    left: 9.3rem;
-    top: 0rem;
-    width: 1.1rem;
-    height: 1.1rem;
-  }
-}
-main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
-  top: 24.4rem;
-  left: -0.9rem;
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
-    left: 12.3rem;
-    top: 12.5rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box .bordas3 .mini-bordas:nth-child(2), main .principais .box2 .bordas3 .mini-bordas:nth-child(2), main .principais .box3 .bordas3 .mini-bordas:nth-child(2), main .principais .box4 .bordas3 .mini-bordas:nth-child(2) {
-    border: 0;
-    top: 11.5rem;
-    left: -0.7rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box2 .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box3 .bordas3 .mini-bordas:nth-child(2)::after, main .principais .box4 .bordas3 .mini-bordas:nth-child(2)::after {
-    border: 0.1rem solid #fcf5e7;
-    left: -13rem;
-    top: -0.1rem;
-  }
-}
-main .principais .box img, main .principais .box2 img, main .principais .box3 img, main .principais .box4 img {
+main .new-in .carrossel .card .box img {
   width: 100%;
   height: 100%;
+  background-color: #f4e9d3;
 }
-main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
+main .new-in .carrossel .card .box .icon3 {
   position: absolute;
-  width: 80%;
-  height: 2rem;
-  border: 0.1rem solid #fff;
-  border-top: 0;
-  bottom: 2rem;
-  left: 3rem;
+  display: flex;
+  align-items: center;
+  left: -1rem;
+  background: #fcf5e7;
 }
-@media (max-width: 1024px) {
-  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
-    width: 74%;
-    left: 10rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
-    width: 78%;
-    height: 1.8rem;
-    left: 2rem;
-    bottom: 1rem;
-  }
-}
-@media (max-width: 550px) {
-  main .principais .box .bordas4, main .principais .box2 .bordas4, main .principais .box3 .bordas4, main .principais .box4 .bordas4 {
-    left: 1.4rem;
-    width: 79%;
-    height: 0.8rem;
-  }
-}
-main .principais .box::after {
-  content: "Wand Shop";
+main .new-in .carrossel .card .box .icon4 {
   position: absolute;
-  color: #fcf5e7;
-  text-shadow: 0 0 5px #000;
-  bottom: 13.5rem;
-  left: 11rem;
-  line-height: 24px;
-  font-weight: 900;
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  right: -1rem;
+  background: #fcf5e7;
 }
-@media (max-width: 550px) {
-  main .principais .box::after {
-    left: 3rem;
-    bottom: 7rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box::after {
-    bottom: 6rem;
-    left: 1rem;
-  }
-}
-main .principais .box2::after {
-  content: "Trunk Station";
+main .new-in .carrossel .card .box .fa-heart {
   position: absolute;
-  color: #fcf5e7;
-  text-shadow: 0 0 5px #000;
-  bottom: 13.5rem;
-  left: 9rem;
-  line-height: 24px;
-  font-weight: 900;
-  font-size: 2rem;
-  text-align: center;
-}
-@media (max-width: 550px) {
-  main .principais .box2::after {
-    left: 3rem;
-    bottom: 7rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box2::after {
-    bottom: 5rem;
-    left: 1rem;
-  }
-}
-main .principais .box3::after {
-  content: "Clothing Collection";
-  position: absolute;
-  color: #fcf5e7;
-  text-shadow: 0 0 5px #000;
-  bottom: 13.5rem;
-  left: 7rem;
-  line-height: 24px;
-  font-weight: 900;
-  font-size: 2rem;
-}
-@media (max-width: 550px) {
-  main .principais .box3::after {
-    left: 5rem;
-    bottom: 7rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box3::after {
-    bottom: 5rem;
-    left: 2rem;
-  }
-}
-main .principais .box4::after {
-  content: "Sweet Trolley";
-  position: absolute;
-  color: #fcf5e7;
-  text-shadow: 0 0 5px #000;
-  bottom: 13.5rem;
-  left: 10rem;
-  line-height: 24px;
-  font-weight: 900;
-  font-size: 2rem;
-}
-@media (max-width: 550px) {
-  main .principais .box4::after {
-    left: 3rem;
-    bottom: 7rem;
-  }
-}
-@media (max-width: 370px) {
-  main .principais .box4::after {
-    bottom: 5rem;
-    left: 3rem;
-  }
+  color: #4a2b10;
+  font-size: 2.2rem;
+  top: 2rem;
+  right: 2rem;
 }
 
 footer {
