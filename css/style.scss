@@ -25,7 +25,7 @@ body {
     display: grid;
     color:variaveis.$color-principal;
     background: variaveis.$bg-principal;
-    grid-template-rows: 2fr 100px 622px 5fr 200px;
+    grid-template-rows: 2fr 100px 622px 5fr 2fr;
 
     @include variaveis.mobile{
         width: 95vw;
@@ -548,8 +548,199 @@ main{
 
 footer{
     width: 100%;
-    height: 100%;
-    background: forestgreen;
+    background-image: url("/img/footer-light.webp");
+    background-size: cover;
+    height: 65rem;
+
+    .final{
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        padding-top: 5rem;
+
+
+        .info{
+            width: 70%;
+            height: 28rem;
+            display: flex;
+            margin: auto;
+            
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .logo{
+                height: 100%;
+                width: 25rem;
+
+            }
+
+            .about{
+                height: 100%;
+                width: 20rem;
+                color:#fff;
+                text-align: center;
+
+                h5{
+                    font-size: 1.9rem;
+                    padding-bottom: 1rem;
+                }
+
+                a{
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+            }
+
+            .customer{
+                height: 100%;
+                width: 20rem;
+                color:#fff;
+                text-align: center;
+
+                h5{
+                    font-size: 1.9rem;
+                    padding-bottom: 1rem;
+                }
+
+                li{
+                    padding-bottom: 1rem;
+
+                    a{
+                        color: #fff;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .legal{
+                height: 100%;
+                width: 20rem;
+                color:#fff;
+                text-align: center;
+
+                h5{
+                    font-size: 1.9rem;
+                    padding-bottom: 1rem;
+                }
+
+                ul{
+
+                    li{
+                        padding-bottom: 1rem;
+                        
+                        a{
+                            color: #fff;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                ol{
+                    li{
+                        a{
+                            color:#a85;
+                            font-size: 1.3rem;
+
+                            &:hover{
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sign{
+            width: 70%;
+            height: 10rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            gap:2rem;
+
+            button{
+                width: 12rem;
+                height: 3rem;
+                border-radius:7px;
+                background: #A98754;
+
+                &:hover{
+                    background: #4a2b10;
+                }
+
+
+                a{
+                    color:#fff;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .pay{
+            color:white;
+            width: 70%;
+            height: 15rem;
+            margin: auto;
+            border-top: .1rem solid rgba(252, 245, 231, 0.1)
+            ;
+
+            .cartoes{
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2rem;
+            gap:.7rem;
+            
+
+                .fa-pix{
+                    color:#30B6A8;
+                }
+
+                .fa-cc-amex{
+                    color:#006FCF;
+                    background: #fff;
+                }
+
+                .fa-cc-mastercard{
+                    background: linear-gradient(45deg, #ec1c24, #fcb131);
+                    ;
+                }
+
+                .fa-cc-apple-pay{
+                    background: #000000;
+                }
+
+                .fa-cc-visa{
+                    background: #142688;
+                }
+            }
+
+            .direitos{
+                width: 50%;
+                color:#fff;
+                height: 5rem;
+                margin: auto;
+                margin-top: 1rem;
+
+                span{
+                    font-size: 1.2rem;
+                    
+                }
+            }
+
+
+        }
+    }
+
+
+
+
 }
 
 @keyframes animacaoBanner1 {

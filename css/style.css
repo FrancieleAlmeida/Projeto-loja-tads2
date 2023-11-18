@@ -22,7 +22,7 @@ body {
   display: grid;
   color: #4A2B10;
   background: #FCF5E7;
-  grid-template-rows: 2fr 100px 622px 5fr 200px;
+  grid-template-rows: 2fr 100px 622px 5fr 2fr;
 }
 @media (max-width: 550px) {
   .container {
@@ -504,8 +504,148 @@ main .new-in .carrossel .card .box .fa-heart {
 
 footer {
   width: 100%;
+  background-image: url("/img/footer-light.webp");
+  background-size: cover;
+  height: 65rem;
+}
+footer .final {
+  margin: auto;
+  width: 80%;
   height: 100%;
-  background: forestgreen;
+  padding-top: 5rem;
+}
+footer .final .info {
+  width: 70%;
+  height: 28rem;
+  display: flex;
+  margin: auto;
+}
+footer .final .info a:hover {
+  text-decoration: underline;
+}
+footer .final .info .logo {
+  height: 100%;
+  width: 25rem;
+}
+footer .final .info .about {
+  height: 100%;
+  width: 20rem;
+  color: #fff;
+  text-align: center;
+}
+footer .final .info .about h5 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+footer .final .info .about a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer .final .info .customer {
+  height: 100%;
+  width: 20rem;
+  color: #fff;
+  text-align: center;
+}
+footer .final .info .customer h5 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+footer .final .info .customer li {
+  padding-bottom: 1rem;
+}
+footer .final .info .customer li a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer .final .info .legal {
+  height: 100%;
+  width: 20rem;
+  color: #fff;
+  text-align: center;
+}
+footer .final .info .legal h5 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+footer .final .info .legal ul li {
+  padding-bottom: 1rem;
+}
+footer .final .info .legal ul li a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer .final .info .legal ol li a {
+  color: #a85;
+  font-size: 1.3rem;
+}
+footer .final .info .legal ol li a:hover {
+  color: #fff;
+}
+footer .final .sign {
+  width: 70%;
+  height: 10rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+}
+footer .final .sign button {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 7px;
+  background: #A98754;
+}
+footer .final .sign button:hover {
+  background: #4a2b10;
+}
+footer .final .sign button a {
+  color: #fff;
+  font-weight: 700;
+}
+footer .final .pay {
+  color: white;
+  width: 70%;
+  height: 15rem;
+  margin: auto;
+  border-top: 0.1rem solid rgba(252, 245, 231, 0.1);
+}
+footer .final .pay .cartoes {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  gap: 0.7rem;
+}
+footer .final .pay .cartoes .fa-pix {
+  color: #30B6A8;
+}
+footer .final .pay .cartoes .fa-cc-amex {
+  color: #006FCF;
+  background: #fff;
+}
+footer .final .pay .cartoes .fa-cc-mastercard {
+  background: linear-gradient(45deg, #ec1c24, #fcb131);
+}
+footer .final .pay .cartoes .fa-cc-apple-pay {
+  background: #000000;
+}
+footer .final .pay .cartoes .fa-cc-visa {
+  background: #142688;
+}
+footer .final .pay .direitos {
+  width: 50%;
+  color: #fff;
+  height: 5rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+footer .final .pay .direitos span {
+  font-size: 1.2rem;
 }
 
 @keyframes animacaoBanner1 {
