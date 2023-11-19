@@ -1,0 +1,242 @@
+@use "./variaveis";
+
+.container-carrinho{
+    width: 98.9vw;
+    height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    color:variaveis.$color-principal;
+    background: variaveis.$bg-principal;
+    grid-template-rows: 2fr 100px auto 2fr;
+
+    @include variaveis.mobile{
+        width: 95vw;
+    }
+}
+
+.main-carrinho{
+    background: variaveis.$bg-principal;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 100%;
+
+
+    .pag-car{
+        width: 100%;
+        margin-top: 3rem;
+        padding-left: 10rem;
+        background: variaveis.$bg-principal;
+
+
+
+        .up{
+
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+
+        .tabela{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: variaveis.$bg-principal;
+
+
+
+            table{
+                width: 100%;
+                height: 30rem;
+                background: variaveis.$bg-principal;
+
+
+                thead{
+                    width: 100%;
+                    height: 100%;
+                    tr{
+                        .coluna1{
+                            position: relative;
+                            width: 27rem;
+                            height: 100%;
+                            padding-left:   1rem;
+
+                            .box{
+                                position: relative;
+                                border: .1rem solid #a85;
+                                height: 25rem;
+                                width: 25rem;
+                                display: flex;
+                                align-items: center;
+                                padding: 1rem;
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: #f4e9d3;
+
+                                    
+                                }
+
+                                .icon3{
+                                    position: absolute;
+                                    left: -1rem;
+                                    background: #FCF5E7;
+
+
+                                }
+                                .icon4{
+                                    position: absolute;
+                                    font-size: 1rem;
+                                    right: -1rem;
+                                    background: #FCF5E7;
+                                }
+                            }
+                        }
+
+                        .coluna2{
+                            width: 30rem;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            padding-top: 5rem;
+                            padding-left: 5rem;
+
+                            h3{
+                                font-size: 2.1rem;
+                            }
+
+                            h4{
+                                font-weight: lighter;
+                                padding-top: 2rem;
+                                padding-left: 1rem;
+                                text-align: start;
+                            }
+
+                            span{
+                                font-weight: lighter;
+                                padding-top: 3rem;
+                                text-align: start;
+                                padding-left: 3rem;
+                            }
+
+                            .qtd-input{
+                                border: .2rem solid #a85;
+                                width: 9rem;
+                                height: 5rem;
+                                display: flex;
+                                align-items: center;
+                                margin-left: 2rem;
+                                gap:1rem;
+                            
+
+                                input{
+                                    border: none;
+                                    width: 3rem;
+                                    outline: none;
+                                    height: 3rem;
+                                    text-align: center;
+                                }
+
+                                i{
+                                    cursor: pointer;
+                                }
+                            }
+                            ol{
+                                padding-top: 4rem;
+                                text-align: start;
+                                padding-left: 1rem;
+                                font-weight: lighter;
+
+                                &:hover{
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                }
+                            }
+
+
+
+                        }
+
+                        .coluna3{
+                            height: 100%;
+                            width: 53rem;
+                            text-align: end;
+                            padding-right: 5rem;
+
+                            h4{
+                                font-size: 3rem;
+                                padding-bottom: 2rem;
+                            }
+
+                            ol{
+                                font-weight: lighter;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .car-down{
+        margin-left: 3rem;
+        width: 100%;
+        height: 30rem;
+        background: variaveis.$bg-principal;
+
+
+        .tabela2{
+            display: flex;
+            justify-content: center;
+            background: variaveis.$bg-principal;
+            width: 100%;
+            height: 100%;
+            text-align: end;
+            padding-bottom: 5rem;
+
+            table{
+                width: 50%;
+                height: 100%;
+                td{
+                    width: 5rem;
+                    padding-left: 5rem;
+
+                    h4{
+                        font-size: 4rem;
+                    }
+
+                    img{
+                        width: 50rem;
+                    }
+
+                    button{
+                        width: 15rem;
+                        height: 5rem;
+                        border-radius: 10px;
+                        background: #a85;
+                        border: none;
+                        color: #fff;
+                        font-weight: 900;
+                        margin-left: 5rem;
+
+                        &:hover{
+                            background: #4A2B10;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        
+    }
+
+}
+
