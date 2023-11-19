@@ -739,22 +739,22 @@ body {
   flex-direction: column;
   background: #FCF5E7;
 }
-.main-carrinho .pag-car .tabela table {
+.main-carrinho .pag-car .tabela #tabela-carrinho {
   width: 100%;
   height: 30rem;
   background: #FCF5E7;
 }
-.main-carrinho .pag-car .tabela table thead {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead {
   width: 100%;
   height: 100%;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna1 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 {
   position: relative;
   width: 27rem;
   height: 100%;
   padding-left: 1rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna1 .box {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 .box {
   position: relative;
   border: 0.1rem solid #a85;
   height: 25rem;
@@ -763,23 +763,26 @@ body {
   align-items: center;
   padding: 1rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna1 .box img {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 .box img {
   width: 100%;
   height: 100%;
   background-color: #f4e9d3;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna1 .box .icon3 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 .box .fa-heart {
+  display: none;
+}
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 .box .icon3 {
   position: absolute;
   left: -1rem;
   background: #FCF5E7;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna1 .box .icon4 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna1 .box .icon4 {
   position: absolute;
   font-size: 1rem;
   right: -1rem;
   background: #FCF5E7;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 {
   width: 30rem;
   height: 100%;
   display: flex;
@@ -787,22 +790,22 @@ body {
   padding-top: 5rem;
   padding-left: 5rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 h3 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 h3 {
   font-size: 2.1rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 h4 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 h4 {
   font-weight: lighter;
   padding-top: 2rem;
   padding-left: 1rem;
   text-align: start;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 span {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 span {
   font-weight: lighter;
   padding-top: 3rem;
   text-align: start;
   padding-left: 3rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 .qtd-input {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input {
   border: 0.2rem solid #a85;
   width: 9rem;
   height: 5rem;
@@ -811,40 +814,40 @@ body {
   margin-left: 2rem;
   gap: 1rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 .qtd-input input {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input input {
   border: none;
   width: 3rem;
   outline: none;
   height: 3rem;
   text-align: center;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 .qtd-input i {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input i {
   cursor: pointer;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 ol {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 ol {
   padding-top: 4rem;
   text-align: start;
   padding-left: 1rem;
   font-weight: lighter;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna2 ol:hover {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 ol:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna3 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna3 {
   height: 100%;
   width: 53rem;
   text-align: end;
   padding-right: 5rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna3 h4 {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna3 h4 {
   font-size: 3rem;
   padding-bottom: 2rem;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna3 ol {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna3 ol {
   font-weight: lighter;
 }
-.main-carrinho .pag-car .tabela table thead tr .coluna3 ol:hover {
+.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna3 ol:hover {
   text-decoration: underline;
   cursor: pointer;
 }
