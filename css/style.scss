@@ -147,6 +147,7 @@ header{
             padding-right: 5rem;
             padding-top: 3rem;
             gap:2rem;
+            position: relative;
             
             
 
@@ -163,6 +164,19 @@ header{
 
             .carrinho{
                 cursor: pointer;
+                position: relative;
+            }
+
+            .compra-qtd{
+                background: #a85;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 100px;
+                position: absolute;
+                top:4rem;
+                right: 4.5rem;
+                text-align:center;
+                font-size: 1.2rem;
             }
 
             i{
@@ -254,6 +268,16 @@ nav{
         font-weight: 900;
         font-size: 1.7rem;
 
+
+        a{
+            color:variaveis.$color-principal;
+            
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
         
 
         i{
@@ -464,13 +488,41 @@ main{
         }
 
         .carrossel{
-            border: .2rem solid black;
             height: 90%;
             width: 95%;
             margin: auto;
             display: flex;
             justify-content: center;
             gap:2rem;
+
+            .rolar{
+                border: .1rem solid #4a2b10;
+                width: 5rem;
+                height: 5rem;
+                margin:auto;
+                transform: rotate(45deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fcf5e7;
+
+                &:hover{
+                    cursor: pointer;
+                    background: #4a2b10;
+                    color: #fcf5e7;
+
+                }
+
+
+                i{
+                    font-size: 2rem;
+                    transform:rotate(140deg);
+
+                    &:hover{
+                        color: #fcf5e7;
+                    }
+                }
+            }
 
             .card{
                 width: 33rem;

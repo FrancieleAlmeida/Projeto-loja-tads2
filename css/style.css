@@ -144,6 +144,7 @@ header .baixo .rigth {
   padding-right: 5rem;
   padding-top: 3rem;
   gap: 2rem;
+  position: relative;
 }
 @media (max-width: 550px) {
   header .baixo .rigth {
@@ -160,6 +161,18 @@ header .baixo .rigth {
 }
 header .baixo .rigth .carrinho {
   cursor: pointer;
+  position: relative;
+}
+header .baixo .rigth .compra-qtd {
+  background: #a85;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100px;
+  position: absolute;
+  top: 4rem;
+  right: 4.5rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 header .baixo .rigth i {
   font-size: 2.3rem;
@@ -245,6 +258,12 @@ nav ul {
   gap: 3rem;
   font-weight: 900;
   font-size: 1.7rem;
+}
+nav ul a {
+  color: #4A2B10;
+}
+nav ul a:hover {
+  text-decoration: underline;
 }
 nav ul i {
   color: #a85;
@@ -436,13 +455,35 @@ main .new-in .titulo img {
   height: 0.3rem;
 }
 main .new-in .carrossel {
-  border: 0.2rem solid black;
   height: 90%;
   width: 95%;
   margin: auto;
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+main .new-in .carrossel .rolar {
+  border: 0.1rem solid #4a2b10;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcf5e7;
+}
+main .new-in .carrossel .rolar:hover {
+  cursor: pointer;
+  background: #4a2b10;
+  color: #fcf5e7;
+}
+main .new-in .carrossel .rolar i {
+  font-size: 2rem;
+  transform: rotate(140deg);
+}
+main .new-in .carrossel .rolar i:hover {
+  color: #fcf5e7;
 }
 main .new-in .carrossel .card {
   width: 33rem;
