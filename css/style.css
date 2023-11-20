@@ -739,6 +739,14 @@ body {
   flex-direction: column;
   background: #FCF5E7;
 }
+.main-carrinho .pag-car .tabela H2 {
+  height: 100%;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 .main-carrinho .pag-car .tabela #tabela-carrinho {
   width: 100%;
   height: 30rem;
@@ -792,42 +800,12 @@ body {
 }
 .main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 h3 {
   font-size: 2.1rem;
-}
-.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 h4 {
-  font-weight: lighter;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  text-align: start;
-}
-.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 span {
-  font-weight: lighter;
-  padding-top: 3rem;
-  text-align: start;
-  padding-left: 3rem;
-}
-.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input {
-  border: 0.2rem solid #a85;
-  width: 9rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 2rem;
-  gap: 1rem;
-}
-.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input input {
-  border: none;
-  width: 3rem;
-  outline: none;
-  height: 3rem;
-  text-align: center;
-}
-.main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 .qtd-input i {
-  cursor: pointer;
+  padding-bottom: 5rem;
 }
 .main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 ol {
   padding-top: 4rem;
   text-align: start;
-  padding-left: 1rem;
+  padding-left: 5rem;
   font-weight: lighter;
 }
 .main-carrinho .pag-car .tabela #tabela-carrinho thead tr .coluna2 ol:hover {
@@ -868,17 +846,14 @@ body {
 }
 .main-carrinho .car-down .tabela2 table {
   width: 50%;
+  text-align: end;
   height: 100%;
 }
 .main-carrinho .car-down .tabela2 table td {
   width: 5rem;
-  padding-left: 5rem;
 }
 .main-carrinho .car-down .tabela2 table td h4 {
   font-size: 4rem;
-}
-.main-carrinho .car-down .tabela2 table td img {
-  width: 50rem;
 }
 .main-carrinho .car-down .tabela2 table td button {
   width: 15rem;
