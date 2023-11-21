@@ -1,7 +1,11 @@
 let carrinho = []
+let total = 0;
 atualizarTabela()
 notificacao()
 valorTotal()
+
+
+
 
 // create -------------------------------------------------
 
@@ -143,12 +147,12 @@ function valorTotal(){
 
         }else{
             let vTotal = document.querySelector(".v-total")
-            const qtdItem = document.querySelector(".qtd-item")
+            let qtdItem = document.querySelector(".qtd-item")
             let somaQtd = carrinho.length;
             if(somaQtd != 0){
                 qtdItem.innerHTML = `${somaQtd}`
             }
-            let total = 0
+            total = 0
             for(let i = 0; i < carrinho.length; i++){
                 const itemValor = carrinho[i]
                 let novoValor = parseFloat(itemValor.valor.replace("R$", "").replace("," , "."))
@@ -162,3 +166,70 @@ function valorTotal(){
 
 }
 //-----------------------------------------------------------------------------------------
+
+
+
+
+//pagamento----------------------------------------------
+const qrContainer = document.querySelector('#qr-code')
+let colorLigth = '#Fff',
+colorDark = '#4A2B10',
+size = 230;
+generateQRCode()
+
+function Pagamento(){
+    if (document.querySelector('.main-carrinho')) {
+
+        document.querySelector(".btpagamento").disabled = true
+        document.querySelector(".pix").style.display = "flex"
+    }
+}
+
+function handleDarkColor(e){
+    colorDark = e.target.value
+    generateQRCode()
+    //console.log(colorDark)
+
+}
+
+function handleLigthColor(e){
+    colorLigth = e.target.value
+    generateQRCode()
+}
+
+function handleQRText(e){
+    text = e.target.value
+    generateQRCode()
+}
+
+function handleSize(e){
+    size = e.target.value
+    generateQRCode()
+}
+async function generateQRCode(){
+    if (document.querySelector('.main-carrinho')) {
+
+        valorTotal();
+        qrContainer.innerHTML = ''
+
+        text = `GRINGOTES BANK\n${total.toFixed(2).replace("", "R$ ").replace(".", ",")}`
+
+        new QRCode('qr-code',{
+            text,
+            height: size,
+            width: size,
+            colorLigth,
+            colorDark,
+        })
+    }
+}
+
+
+
+
+// evento
+
+const btpagamento = document.querySelector(".btpagamento");
+if (btpagamento) {
+    btpagamento.addEventListener("click", Pagamento);
+}
