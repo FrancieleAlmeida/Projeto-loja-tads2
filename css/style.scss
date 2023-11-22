@@ -466,26 +466,56 @@ body {
     background: variaveis.$bg-principal;
 
     @include variaveis.mobile{
-        height: 100vh;
     }
 
     .new-in{
         width: 100%;
         height: 60rem;
         margin-top: 1rem;
+
+        @include variaveis.tablet{
+            margin-top: 35rem;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include variaveis.mobile{
+            margin-top: 35rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
         .titulo{
             display: flex;
             align-items: center;
             justify-content: center;
             gap:3rem;
 
+            @include variaveis.mobile{
+            }
+
             h2{
                 font-size: 3rem;
+
+                @include variaveis.tablet{
+                    font-size: 2rem;
+                }
+
+                @include variaveis.mobile{
+                    font-size: 2rem;
+                }
             }
 
             img{
                 width: 60rem;
                 height: .3rem;
+
+                @include variaveis.tablet{
+                    width: 25%;
+                }
+                @include variaveis.mobile{
+                    width: 25%;
+                }
                 
             }
         }
@@ -498,6 +528,22 @@ body {
             justify-content: center;
             gap:2rem;
 
+            @include variaveis.tablet{
+                display: flex;
+                flex-wrap: wrap;
+                gap:2rem;
+                
+
+            }
+
+            @include variaveis.mobile{
+                display: flex;
+                flex-wrap: wrap;
+                gap:2rem;
+                margin: 0;
+
+            }
+
             .rolar{
                 border: .1rem solid #4a2b10;
                 width: 5rem;
@@ -508,6 +554,14 @@ body {
                 align-items: center;
                 justify-content: center;
                 background: #fcf5e7;
+
+                @include variaveis.tablet{
+                    display: none;
+                }
+
+                @include variaveis.mobile{
+                    display: none;
+                }
 
                 &:hover{
                     cursor: pointer;
@@ -527,12 +581,17 @@ body {
                 }
             }
 
+
             .card{
                 width: 33rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap:3rem;
+
+                @include variaveis.mobile{
+                    gap:0;
+                }
 
                 button{
                     border: none;
@@ -544,6 +603,14 @@ body {
                     background: #A98754;
                     color: #fff;
                     font-weight: 700;
+
+                    @include variaveis.tablet{
+                        width: 40%;
+                    }
+
+                    @include variaveis.mobile{
+                        width: 40%;
+                    }
 
                     &:hover{
                         background: #4a2b10;
@@ -563,10 +630,16 @@ body {
                     align-items: center;
                     margin-top: 5rem;
 
+                    @include variaveis.mobile{
+                    }
+
                     img{
                         width: 100%;
                         height: 100%;
                         background-color: #f4e9d3;
+
+                        @include variaveis.mobile{
+                        }
 
                     }
 
@@ -599,6 +672,14 @@ body {
 
                 }
             }
+            .outros{
+                @include variaveis.tablet{
+                    display: none;
+                }
+                @include variaveis.mobile{
+                    display: none;
+                }
+            }
         }
 
     }
@@ -611,11 +692,30 @@ body {
     background-size: cover;
     height: 65rem;
 
+    @include variaveis.tablet{
+
+        position: absolute;
+        top: 250rem;
+    }
+
+    @include variaveis.mobile{
+        position: absolute;
+        top: 250rem;
+    }
+
     .final{
         margin: auto;
         width: 80%;
         height: 100%;
         padding-top: 5rem;
+
+        @include variaveis.tablet{
+            height: auto;
+        }
+
+        @include variaveis.mobile{
+            height: auto;
+        }
 
 
         .info{
@@ -634,6 +734,14 @@ body {
                 height: 100%;
                 width: 25rem;
 
+                @include variaveis.tablet{
+                    display:none
+                }
+
+                @include variaveis.mobile{
+                    display:none
+                }
+
             }
 
             .about{
@@ -641,6 +749,13 @@ body {
                 width: 20rem;
                 color:#fff;
                 text-align: center;
+
+                @include variaveis.tablet{
+                    display: none;
+                }
+                @include variaveis.mobile{
+                    display: none;
+                }
 
                 h5{
                     font-size: 1.9rem;
@@ -721,6 +836,13 @@ body {
             margin: auto;
             gap:2rem;
 
+            @include variaveis.tablet{
+                display: none;
+            }
+            @include variaveis.mobile{
+                display: none;
+            }
+
             button{
                 width: 12rem;
                 height: 3rem;
@@ -744,8 +866,14 @@ body {
             width: 70%;
             height: 15rem;
             margin: auto;
-            border-top: .1rem solid rgba(252, 245, 231, 0.1)
-            ;
+            border-top: .1rem solid rgba(252, 245, 231, 0.1);
+
+            @include variaveis.tablet{
+                margin-top: 2rem;
+            }
+            @include variaveis.mobile{
+                margin-top: 2rem;
+            }
 
             .cartoes{
             width: 100%;
@@ -789,6 +917,14 @@ body {
 
                 span{
                     font-size: 1.2rem;
+
+                    @include variaveis.tablet{
+                        font-size: 1rem;
+                    }
+
+                    @include variaveis.mobile{
+                        font-size: 1rem;
+                    }
                     
                 }
             }

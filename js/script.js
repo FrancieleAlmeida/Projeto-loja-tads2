@@ -31,7 +31,14 @@ function inserirCarrinho(){
     atualizarTabela()
 
 }
-//----------------------------------------------------
+
+// evento ------------------------------------------------
+const btAdicionar = document.querySelectorAll('.btAdicionar');
+btAdicionar.forEach(function (botao) {
+    botao.addEventListener("click", inserirCarrinho);
+});
+//-----------------------------------------------------------
+// notificação ----------------------------------------------------
 
 function notificacao(){
     const carrinho = getStorage();
@@ -45,12 +52,8 @@ function notificacao(){
     }
     
 }
+//-----------------------------------------------------------
 
-// evento ------------------------------------------------
-const btAdicionar = document.querySelectorAll('.btAdicionar');
-btAdicionar.forEach(function (botao) {
-    botao.addEventListener("click", inserirCarrinho);
-});
 
 
 // local storage -------------------------------------------
@@ -115,7 +118,7 @@ function criarTabela(carrinho,index){
 }
 //------------------------------------------------------
 
-// limpando duplicado
+// limpando duplicado-----------------------------------
 
 function limparTabela(){
     let duplicado = document.querySelectorAll("#tabela-carrinho>thead")
@@ -224,12 +227,18 @@ async function generateQRCode(){
     }
 }
 
+//-------------------------------------------------------
 
-
-
-// evento
+// evento--------------------------------------------------
 
 const btpagamento = document.querySelector(".btpagamento");
 if (btpagamento) {
     btpagamento.addEventListener("click", Pagamento);
 }
+
+//--------------------------------------------------------
+
+
+
+
+
